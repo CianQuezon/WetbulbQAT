@@ -31,4 +31,4 @@ jobs:
 
     - name: Run tests
       run: |
-        pytest tests/ --maxfail=1 --disable-warnings -q
+        pytest meteorological_equations/test/ --maxfail=1 --disable-warnings -q
