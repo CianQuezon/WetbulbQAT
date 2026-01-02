@@ -8,7 +8,7 @@ import pytest
 from scipy import optimize
 from numba import njit
 
-from meteorological_equations.meteorological_equations.math.solvers._jit_solvers import _newton_raphson_scalar, _bisection_scalar, _brent_scalar
+from meteorological_equations.math.solvers._jit_solvers.py import _newton_raphson_scalar, _bisection_scalar, _brent_scalar
 
 
 # Test functions and their derivatives - must be JIT-compiled for Numba
