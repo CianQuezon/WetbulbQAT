@@ -3,6 +3,8 @@ name: Python CI
 on:
   push:
     branches: [ main, 'features/**', 'WIP/**' ]
+    paths:
+        - 'meteorological_equations/test/**'
   pull_request:
     branches: [ main ]
 
@@ -26,7 +28,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install -r meteorological_equations/requirements.txt
         pip install pytest numpy
 
     - name: Run tests
