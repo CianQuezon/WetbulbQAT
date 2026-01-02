@@ -11,7 +11,7 @@ iniconfig==2.3.0
 kiwisolver==1.4.9
 llvmlite==0.46.0
 matplotlib==3.10.8
--e git+ssh://git@github.com/CianQuezon/WetbulbQAT.git@3f039048307c52e6c2e8244996885008eb5c608a#egg=meteorological_equations&subdirectory=meteorological_equations
+-e git+https://github.com/CianQuezon/WetbulbQAT.git@3f039048307c52e6c2e8244996885008eb5c608a#egg=meteorological_equations&subdirectory=meteorological_equations
 MetPy==1.7.1
 numba==0.63.1
 numpy==2.3.5
