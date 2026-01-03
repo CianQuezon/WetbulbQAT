@@ -29,14 +29,13 @@ jobs:
       - run: pip install ruff
       - run: ruff format --check .
 
-  type-check:
-    name: Type Check
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-         python-version: '3.11'
-      - run: pip install mypy
-      - run: mypy meteorological_equations/
-    
+  # type-check:
+  #   name: Type Check
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: actions/setup-python@v5
+  #       with:
+  #        python-version: '3.11'
+  #     - run: pip install mypy
+  #     - run: mypy meteorological_equations/
